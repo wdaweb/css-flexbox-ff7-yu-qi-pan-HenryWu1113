@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      height: 100%;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100%;
+      background-image: url('./bg-full.jpg');
+      background-repeat: no-repeat;
+      background-size: 100vw 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      background-blend-mode: multiply;
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      width: 70%;
+      height: 70%;
+      /* background-color: #fff; */
+      border: 1px solid white;
+      display: flex;
+      /* flex-wrap: wrap; */
+    }
+
+    .left {
+      width: 50%;
+      background: url('./main.jpg') no-repeat 60% center/880px;
+      background-color: rgba(0, 0, 0, 0.5);
+      background-blend-mode: multiply;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .left .CD {
+      width: 30%;
+    }
+
+    .left img {
+      width: 100%;
+    }
+
+    .left .word {
+      width: 75%;
+      color: #fff;
+      text-align: center;
+    }
+
+    .right {
+      width: 50%;
+      background-color: #333;
+    }
+
+    .right-top {
+      height: 50%;
+      background-color: #999;
+      display: flex;
+      justify-content: center;
+    }
+
+    .right-top .content {
+      width: 66%;
+      padding-left: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .content h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 24px;
+    }
+
+    .right-top .picture {
+      width: 33%;
+      position: relative;
+    }
+
+    .right-top .picture img {
+      width: 120%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
+    .right-bottom {
+      height: 50%;
+      background-color: #000;
+      color: #fff;
+      position: relative;
+    }
+
+    .right-bottom .picture {
+      width: 33%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    .right-bottom .content {
+      width: 66%;
+      position: absolute;
+      padding-right: 2rem;
+      flex-direction: column;
+      justify-content: center;
+      left: 70%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .right-bottom .picture img {
+      width: 120%;
+      position: absolute;
+      bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="left">
+      <div class="CD"><img src="./ps4-ff7.png"></div>
+      <div class="word">
+        <h1>AVAILABLE NOW</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel distinctio accusamus mollitia
+          laudantium. Nisi repudiandae facilis tenetur rerum doloremque velit quidem molestiass.</p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="right-top">
+        <div class="content">
+          <h1>Cloud</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, nesciunt dolorum. Excepturi
+            voluptas,
+            itaque dolorum accusantium!
+          </p>
+        </div>
+        <div class="picture">
+          <img src="./cloud.png">
+        </div>
+      </div>
+      <div class="right-bottom">
+        <div class="picture">
+          <img src="./tifa.png">
+        </div>
+        <div class="content">
+          <h1>Tifa</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, nesciunt dolorum. Excepturi
+            voluptas,
+            itaque dolorum accusantium!
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
